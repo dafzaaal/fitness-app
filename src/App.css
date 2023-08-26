@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Asap:wght@100&family=IBM+Plex+Sans:wght@100&family=Noto+Sans+JP:wght@100&family=Nunito:wght@200&family=Open+Sans:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&family=Space+Mono&display=swap');
+
+button {
+  width: 100px;
+  height: 42px;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+button:hover {
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+  width: 120px;
+  height: 50px;
+}
+
+
+
+body {
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
+  background-image: url("./images/backdrop.jpg");
+}
+
+.login{
+  display: flex;
+  border: 5px solid white;
+  padding: 150px 75px 150px 75px;
+  margin: 50px 50px 50px 50px;
+  flex-direction: column;
+  border-radius: 10px;
+  background-image: url("./images/login.png");
+  background-size: cover;
+}
+
+.login button {
+  align-self: center;
+}
+
+.login h3 {
+  color: black;
+  font-weight: bolder;
+  align-self: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.login input {
+  width: 265px;
+  height: 40px;
+  border-radius: 8px;
+  margin: 10px 25px 25px 25px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.accLink {
+  align-self: center;
+  margin-top: 35px;
+  color: white;
+  font-weight: bold;
+}
+
+.accLink:hover{
+  color: blueviolet;
+}
+
+.login_err {
+  align-self: center;
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  padding: 20px 20px 20px 20px;
+}
