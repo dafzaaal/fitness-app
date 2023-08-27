@@ -28,11 +28,10 @@ function login() {
         };
         try {
             const response = await axios.post("http://127.0.0.1:3000/api/v1/login", headers);
-            const data = response.data;
-            const count_value = data[0];
-            const num = count_value["COUNT(*)"];
-            console.log(num);
-            if(num != 0) {
+            console.log(response);
+
+            const num = response.data;
+            if(num === "OK") {
                 navigator("/dashboard");
             }
             else{
@@ -54,6 +53,7 @@ function login() {
                         <button onClick={() => {checkCredentials(username, password)}}>Login</button>
                         <Link to="/create" className='accLink'>Don't have an account? Sign up!</Link>
 
+                        
                         {credentialFlag && 
                             <p className='login_err'>Incorrect login, try again</p>                     
                         }

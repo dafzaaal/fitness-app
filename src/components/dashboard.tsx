@@ -2,9 +2,9 @@ function dashboard() {
     return(
         <>
             <div>
-                <p>
-                    Logged in, welcome to the dashboard
-                </p>
+                <div>   
+                    <p>this is where the dashboard goes</p>
+                </div>
             </div>
         </>
     );
