@@ -26,7 +26,7 @@ router.post("/", async (req, res) => {
         if(sqlNum === 1) { // user exists, send back a 200
             res.send(200);
         }
-        else { // else user does not exist, send back a 404 not found
+        else { // else user does not exist, send back an error
             res.send("User does not exist!");
         }
     }

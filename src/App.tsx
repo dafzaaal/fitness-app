@@ -1,4 +1,4 @@
-import './App.css'
+
 import {Routes, Route, BrowserRouter} from 'react-router-dom';
 import LoginComponent from './components/login.tsx';
 import DashboardComponent from './components/dashboard.tsx';
@@ -10,7 +10,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/login" element={<LoginComponent/>}></Route>
+          <Route path="/" element={<LoginComponent/>}></Route>
           <Route path='/dashboard' element={<DashboardComponent/>}></Route>
           <Route path='/create' element={<CreateAccountComponent/>}></Route>
         </Routes>

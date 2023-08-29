@@ -1,7 +1,9 @@
+import "../../styles/dashboard.css"
+
 function dashboard() {
     return(
         <>
-            <div>
+            <div id="dashboard">
                 <div>   
                     <p>this is where the dashboard goes</p>
                 </div>
